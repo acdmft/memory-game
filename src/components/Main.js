@@ -69,9 +69,9 @@ class Main extends React.Component {
     if (this.state.matchedCards === 6) {
       return (
         <>
-          <div className="gameOver mt-5">
+          <div className="gameOver mt-0">
             <h2 className="text-center">Félicitations vous avez gagné</h2>
-            <div className="d-flex justify-content-center mt-3">
+            <div className="d-flex justify-content-center mt-0">
               <Reset finish={this.props.finish} />
             </div>
           </div>
@@ -103,15 +103,15 @@ class Main extends React.Component {
     return (
       <main>
         <section className="container-fluid">
-          <div className="row d-flex justify-content-around mt-4">
-            {this.renderCards(0, 3)}
-          </div>
-          <div className="row d-flex justify-content-around mt-4">
-            {this.renderCards(4, 7)}
-          </div>
-          <div className="row d-flex justify-content-around mt-4">
-            {this.renderCards(8, 11)}
-          </div>
+            <div className="row items-between mx-auto mt-3">
+              {this.renderCards(0, 3)}
+            </div>
+            <div className="row items-between mx-auto mt-3">
+              {this.renderCards(4, 7)}
+            </div>
+            <div className="row items-between mx-auto mt-3">
+              {this.renderCards(8, 11)}
+            </div>
         </section>
         {this.renderGameOver()}
       </main>

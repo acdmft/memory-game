@@ -8,12 +8,19 @@ body {
 }
 
 .card {
-  background-color: white;
+  background-color: transparent !important;
+  border-color: transparent !important;
 }
+
 .row {
-  height: 15vh;
-  margin-top: 3rem;
+  height: fit-content;
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+
+  max-width: 80%;
 }
+
 
 img {
   object-fit: fill;
@@ -21,5 +28,5 @@ img {
 header h1,
 h2,
 p {
-  color: white;
+  /* color: white; */
 }

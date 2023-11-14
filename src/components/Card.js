@@ -31,7 +31,7 @@ class Card extends React.Component {
         <img
           src={this.state.path}
           alt="Carte retournée"
-          style={{ width: "100%", height: "9rem" }}
+          style={{ width: "12rem", height: "12rem" }}
         />
       </div>
     );
@@ -46,7 +46,7 @@ class Card extends React.Component {
         <img
           src={this.props.cardProps.path}
           alt="Carte face"
-          style={{ width: "100%", height: "9rem" }}
+          style={{ width: "12rem", height: "12rem" }}
         />
       </div>
     );
