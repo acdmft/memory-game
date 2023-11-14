@@ -69,12 +69,15 @@ class Main extends React.Component {
     if (this.state.matchedCards === 6) {
       return (
         <>
-          <div className="gameOver mt-0">
-            <h2 className="text-center">Félicitations vous avez gagné</h2>
-            <div className="d-flex justify-content-center mt-0">
+          <div className="gameOver w-50 py-5 rounded position-absolute top-50" id="gameOver">
+            <h2 className="text-center mb-5 px-5">Félicitations vous avez gagné</h2>
+            <div className="d-flex justify-content-center mt-3">
               <Reset finish={this.props.finish} />
+
             </div>
+            
           </div>
+            
         </>
       );
     }
@@ -112,8 +115,10 @@ class Main extends React.Component {
             <div className="row items-between mx-auto mt-3">
               {this.renderCards(8, 11)}
             </div>
+            <div className="row items-between mx-auto">
+              {this.renderGameOver()}
+            </div>
         </section>
-        {this.renderGameOver()}
       </main>
     );
   }

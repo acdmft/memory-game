@@ -11,8 +11,7 @@ body {
   background-color: transparent !important;
   border-color: transparent !important;
 }
-.card img {
-  
+.card img {  
   border-radius: 10%;
 }
 
@@ -29,8 +28,14 @@ body {
 img {
   object-fit: fill;
 }
-header h1,
-h2,
-p {
-  /* color: white; */
+
+
+#gameOver {
+  background-color: #c3cece;
+  min-height: 18rem;
+}
+
+h2 {
+  color: #0dcaf0 !important;
+
 }
