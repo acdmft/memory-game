@@ -21,7 +21,7 @@ class Card extends React.Component {
   renderBack() {
     return (
       <div
-        className="col-2 card d-flex justify-content-center"
+        className="col-2 card d-flex rounded-5 justify-content-center"
         onClick={() => {
           this.props.onClick(this.props.cardProps.value);
           this.showCard();
@@ -40,7 +40,7 @@ class Card extends React.Component {
   renderFace() {
     return (
       <div
-        className="col-2 card  d-flex justify-content-center"
+        className="col-2 card  d-flex rounded-5 justify-content-center"
         style={{ padding: 0 }}
       >
         <img
