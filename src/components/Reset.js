@@ -7,7 +7,7 @@ class Reset extends React.Component {
         <form>
           <input
             type="submit"
-            className="btn btn-light"
+            className="btn btn-warning"
             style={{ height: 40 }}
             value="Reset"
           />
@@ -22,7 +22,7 @@ class Reset extends React.Component {
         <form>
           <input
             type="submit"
-            className="btn btn-light"
+            className="btn btn-success"
             style={{ height: 40 }}
             value="Start again"
           />

@@ -14,8 +14,8 @@ class Header extends React.Component {
     return (
       <header>
         <h1 className="text-center py-3">Memory game</h1>
-        <div className="d-flex justify-content-around align-items-center">
-          <div className="col-6">
+        <div className="d-flex w-50 mx-auto justify-content-around align-items-center">
+          <div className="col-8">
             <h2>Règle : </h2>
             <p>Trouve les images identiques et c'est gagné!</p>
           </div>

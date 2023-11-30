@@ -69,8 +69,8 @@ class Main extends React.Component {
     if (this.state.matchedCards === 6) {
       return (
         <>
-          <div className="gameOver w-50 py-5 rounded position-absolute top-50" id="gameOver">
-            <h2 className="text-center mb-5 px-5">Félicitations vous avez gagné</h2>
+          <div className="gameOver py-5 rounded position-absolute end-0 h-75 mt-3 me-4 w-50" id="gameOver">
+            <h2 className="text-center mb-5 px-2">Félicitations vous avez gagné</h2>
             <div className="d-flex justify-content-center mt-3">
               <Reset finish={this.props.finish} />
 
@@ -82,7 +82,7 @@ class Main extends React.Component {
       );
     }
   }
-  // takes index of first and last cards in the rendered row
+  // takes index of first and last cards in the rendered row 
   renderCards(firstCard, lastCard) {
     console.log(this.state.cardProps);
     return this.state.cardProps.map((card, i) => {
@@ -105,7 +105,10 @@ class Main extends React.Component {
   render() {
     return (
       <main>
-        <section className="container-fluid">
+        <div className="row position-absolute w-50 h-75 end-0" >
+          {this.renderGameOver()}
+        </div>
+        <section className="container-fluid ">
             <div className="row items-between mx-auto mt-3">
               {this.renderCards(0, 3)}
             </div>
@@ -114,9 +117,6 @@ class Main extends React.Component {
             </div>
             <div className="row items-between mx-auto mt-3">
               {this.renderCards(8, 11)}
-            </div>
-            <div className="row items-between mx-auto">
-              {this.renderGameOver()}
             </div>
         </section>
       </main>
